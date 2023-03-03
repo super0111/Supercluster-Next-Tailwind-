@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import mastodonLogo from "../public/Mastodon.svg";
-import twitterLogo from "../public/Twitter.svg";
-import discordLogo from "../public/Discord.svg";
-import githubLogo from "../public/Github.svg";
-import linkedInLogo from "../public/LinkedIn.svg";
+import mastodonLogo from "../public/static/images/Mastodon.svg";
+import twitterLogo from "../public/static/images/Twitter.svg";
+import discordLogo from "../public/static/images/Discord.svg";
+import githubLogo from "../public/static/images/Github.svg";
+import linkedInLogo from "../public/static/images/LinkedIn.svg";
 
 const socialItems = [
   { icon: discordLogo, to: 'https://discord.gg/T49E27Tdtu'},

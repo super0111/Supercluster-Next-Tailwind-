@@ -1,7 +1,7 @@
 import { useRouter } from "next/router"
 import Link from "next/link";
 import Image from "next/image";
-import SuperclusterLogo from "../public/supercluster-logotype.svg";
+import SuperclusterLogo from "../public/static/images/supercluster-logotype.svg";
 
 const navItems = [
   { name: 'Home', to: '/' },
@@ -16,6 +16,7 @@ export default function Navbar() {
       <Image
         src={SuperclusterLogo}
         alt="Supercluster Labs Logo"
+        className="cursor-pointer"
         onClick={()=>router.push('/')}
       />
       <div className="flex justify-between align-center bg-white w-full rounded-full ml-8 py-4 pr-8">
@@ -31,7 +32,7 @@ export default function Navbar() {
         </div>
         <Link target="_blank" href="https://supercluster-labs.beehiiv.com/subscribe">
           <button
-            className='hidden md:block px-5 py-3 font-bold rounded-full drop-shadow bg-black text-supercluster-primary'>
+            className='hidden md:block px-5 py-3 font-bold rounded-full drop-shadow bg-black hover:bg-slate-900 transition-all text-supercluster-primary'>
             Get early access
           </button>
         </Link>
